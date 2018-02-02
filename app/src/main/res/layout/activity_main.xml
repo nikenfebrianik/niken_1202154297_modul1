@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.showup.niken.niken_1202154297_modul1.MainActivity">
+
+    <TextView
+        android:id="@+id/makanMalam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Makan Malam"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/Tempat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/makanMalam"
+        android:layout_centerHorizontal="true"
+        android:text="dengan Milea" />
+
+    <EditText
+        android:id="@+id/namaMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Jumlah"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namaMakanan"
+        android:layout_alignStart="@+id/namaMakanan"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/eatBus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Jumlah"
+        android:layout_marginTop="27dp"
+        android:onClick="keEatbus"
+        android:layout_toLeftOf="@+id/Tempat"
+        android:layout_toStartOf="@+id/Tempat"
+        android:text="@string/eatbus" />
+
+    <Button
+        android:id="@+id/abNormal"
+        android:onClick="keAbnormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eatBus"
+        android:layout_alignBottom="@+id/eatBus"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_toEndOf="@+id/eatBus"
+        android:layout_toRightOf="@+id/eatBus"
+        android:text="@string/abnormal" />
+</RelativeLayout>
